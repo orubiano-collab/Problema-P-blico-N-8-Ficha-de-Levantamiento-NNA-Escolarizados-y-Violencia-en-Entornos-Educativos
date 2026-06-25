@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ficha PP8 · NNA Escolarizados · Rebolo 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F4F4;--surface:#FFFFFF;--card:#FFFFFF;--card2:#F7F8FA;--accent:#D6534A;--acc2:#C0392B;--acc-bg:rgba(214,83,74,.08);--acc-brd:rgba(214,83,74,.28);--gold:#C8A84B;--gold2:#9C7A2E;--gold-bg:rgba(200,168,75,.14);--gold-brd:rgba(200,168,75,.4);--steel:#0057A8;--stl-bg:rgba(0,87,168,.07);--stl-brd:rgba(0,87,168,.22);--teal:#0E9F6E;--teal-bg:rgba(14,159,110,.09);--teal-brd:rgba(14,159,110,.25);--orange:#E07A28;--orange-d:#B85C00;--orange-bg:rgba(224,122,40,.09);--orange-brd:rgba(224,122,40,.32);--border:rgba(0,40,85,.12);--brd2:rgba(0,40,85,.06);--ink:#1C2B3A;--ink2:#3D5568;--ink3:#5A6878;--r:10px;--r2:16px;--r3:24px;--sh:0 4px 24px rgba(0,40,85,.07);--font-d:'Fraunces',Georgia,serif;--font-b:'Space Grotesk',sans-serif;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}
+body{font-family:var(--font-b);background:var(--bg);color:var(--ink);min-height:100vh;font-size:15px;line-height:1.65;}
+.stripe{height:3px;background:linear-gradient(90deg,var(--steel),var(--gold),var(--teal),var(--accent),var(--steel));background-size:400% 100%;animation:sA 6s linear infinite;}
+@keyframes sA{0%{background-position:0%}100%{background-position:400%}}
+.topbar{position:sticky;top:3px;z-index:200;background:rgba(255,255,255,.92);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);padding:11px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.tb-brand{display:flex;align-items:center;gap:12px;}.tb-name{font-family:var(--font-d);font-size:.88em;font-weight:600;color:var(--ink);line-height:1.2;}.tb-name span{display:block;font-family:var(--font-b);font-weight:400;font-size:.82em;color:var(--ink3);}
+.tb-pills{display:flex;gap:8px;flex-wrap:wrap;}.pill{padding:4px 11px;border-radius:20px;font-size:.68em;font-weight:600;letter-spacing:.04em;border:1px solid;}
+.pill-red{background:var(--acc-bg);border-color:var(--acc-brd);color:var(--acc2);}.pill-gold{background:var(--gold-bg);border-color:var(--gold-brd);color:var(--gold2);}.pill-stl{background:var(--stl-bg);border-color:var(--stl-brd);color:var(--steel);}.pill-teal{background:var(--teal-bg);border-color:var(--teal-brd);color:var(--teal);}
+.hero{background:linear-gradient(150deg,#002855 0%,#0057A8 100%);padding:56px 32px 80px;position:relative;overflow:hidden;}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:32px;background:var(--bg);border-radius:32px 32px 0 0;}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:56px 56px;}
+.hero-glow{position:absolute;top:-100px;right:-80px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(200,168,75,.22) 0%,transparent 65%);pointer-events:none;}
+.hero-inner{max-width:1080px;margin:0 auto;position:relative;z-index:1;}
+.prob-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,168,75,.16);border:1px solid rgba(200,168,75,.4);padding:6px 16px;border-radius:40px;margin-bottom:22px;font-size:.7em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#FFE9B0;}
+.prob-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--gold);animation:blink 1.6s infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.15}}
+.hero h1{font-family:var(--font-d);font-size:clamp(1.8em,4vw,3em);font-weight:800;color:#fff;line-height:1.1;margin-bottom:16px;max-width:820px;font-style:italic;}
+.hero h1 em{font-style:normal;color:#FFE9B0;}.prob-text{background:rgba(255,255,255,.07);border:1px solid rgba(200,168,75,.3);border-left:3px solid var(--gold);border-radius:0 var(--r2) var(--r2) 0;padding:18px 24px;margin-bottom:32px;font-size:.91em;color:rgba(255,255,255,.8);line-height:1.75;max-width:820px;}
+.prob-text strong{color:#FFE9B0;font-weight:600;}
+.zones-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px;}.zone-chip{display:flex;align-items:center;gap:9px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--r2);padding:10px 18px;font-size:.82em;color:#fff;}.zone-chip .dot{width:8px;height:8px;border-radius:50%;animation:blink 2s infinite;}.dot-red{background:#FFD166;}.dot-gold{background:#9FD8FF;}
+.stats-row{display:flex;gap:24px;flex-wrap:wrap;}.stat-num{font-family:var(--font-d);font-size:2.2rem;font-weight:800;color:#fff;line-height:1;}.stat-num em{font-style:normal;color:#FFE9B0;font-size:.8em;}.stat-lbl{font-size:.7em;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.08em;margin-top:3px;}.stat-sep{width:1px;background:rgba(255,255,255,.18);align-self:stretch;}
+.wrap{max-width:1080px;margin:0 auto;padding:36px 32px 80px;}@media(max-width:640px){.wrap{padding:24px 16px 60px;}}
+.prog-bar-wrap{background:var(--card);border:1px solid var(--border);border-radius:var(--r2);padding:16px 22px;margin-bottom:28px;box-shadow:var(--sh);}
+.prog-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;}.prog-label{font-size:.72em;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--ink3);}.prog-pct{font-family:var(--font-d);font-size:.9em;font-weight:700;color:var(--steel);}
+.prog-track{height:4px;background:var(--brd2);border-radius:2px;overflow:hidden;}.prog-fill{height:100%;background:linear-gradient(90deg,var(--steel),var(--gold));border-radius:2px;transition:width .5s ease;width:0%;}
+.prog-steps{display:flex;gap:5px;margin-top:12px;flex-wrap:wrap;}.ps{flex:1;min-width:70px;padding:5px 6px;border-radius:6px;font-size:.66em;font-weight:600;text-align:center;background:var(--card2);color:var(--ink3);border:1px solid transparent;cursor:pointer;transition:all .2s;}.ps.active{background:var(--stl-bg);color:var(--steel);border-color:var(--stl-brd);}.ps.done{background:var(--teal-bg);color:var(--teal);border-color:var(--teal-brd);}
+.section{display:none;animation:fadeUp .3s ease;}.section.vis{display:block;}@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--r3);overflow:hidden;box-shadow:var(--sh);margin-bottom:24px;}
+.card-hdr{padding:20px 28px;border-bottom:1px solid var(--brd2);display:flex;align-items:center;gap:14px;}
+.c-ico{width:44px;height:44px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.3em;}.ci-red{background:var(--acc-bg);border:1px solid var(--acc-brd);}.ci-gold{background:var(--gold-bg);border:1px solid var(--gold-brd);}.ci-stl{background:var(--stl-bg);border:1px solid var(--stl-brd);}.ci-teal{background:var(--teal-bg);border:1px solid var(--teal-brd);}.ci-org{background:var(--orange-bg);border:1px solid var(--orange-brd);}
+.c-sub{font-size:.67em;font-weight:600;text-transform:uppercase;letter-spacing:.09em;color:var(--ink3);margin-bottom:2px;}.c-title{font-family:var(--font-d);font-size:1em;font-weight:600;color:var(--ink);}
+.card-body{padding:26px 28px;}
+.fld{margin-bottom:18px;}.lbl{display:block;font-size:.82em;font-weight:600;color:var(--ink2);margin-bottom:6px;}.req{color:var(--accent);margin-left:3px;}.hint{font-weight:400;color:var(--ink3);font-size:.88em;margin-left:4px;}
+input[type=text],input[type=date],input[type=time],input[type=number],textarea,select{width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:var(--r);background:var(--card2);color:var(--ink);font-family:var(--font-b);font-size:.9em;transition:border-color .2s,box-shadow .2s;appearance:none;-webkit-appearance:none;}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--steel);box-shadow:0 0 0 3px rgba(0,87,168,.13);background:#fff;}
+textarea{resize:vertical;min-height:80px;}select option{background:var(--card);}
+select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='rgba(28,43,58,0.45)' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:38px;}
+.fld-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}@media(max-width:560px){.fld-row{grid-template-columns:1fr;}}
+.sep{border:none;border-top:1px solid var(--brd2);margin:20px 0;}
+.sub-h{font-family:var(--font-b);font-size:.72em;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink3);margin:22px 0 13px;display:flex;align-items:center;gap:8px;}.sub-h::after{content:'';flex:1;height:1px;background:var(--brd2);}
+.opts{display:flex;flex-direction:column;gap:7px;}.opts.h{flex-direction:row;flex-wrap:wrap;gap:7px;}
+.opt{display:flex;align-items:center;gap:10px;padding:10px 14px;border:1.5px solid var(--border);border-radius:var(--r);cursor:pointer;transition:all .18s;background:var(--card2);font-size:.87em;color:var(--ink2);}.opt:hover{border-color:var(--steel);background:var(--stl-bg);}
+.opt input{accent-color:var(--steel);cursor:pointer;width:auto;height:auto;padding:0;border:none;background:none;box-shadow:none;}.opt.sel{border-color:var(--steel);background:var(--stl-bg);color:var(--steel);font-weight:600;}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:5px;}.chip{display:inline-flex;align-items:center;gap:5px;padding:5px 13px;border-radius:20px;font-size:.77em;font-weight:600;cursor:pointer;border:1.5px solid;transition:all .18s;user-select:none;}.chip input{display:none;}
+.c-r{border-color:var(--acc-brd);color:var(--acc2);background:var(--acc-bg);}.c-g{border-color:var(--gold-brd);color:var(--gold2);background:var(--gold-bg);}.c-s{border-color:var(--stl-brd);color:var(--steel);background:var(--stl-bg);}.c-t{border-color:var(--teal-brd);color:var(--teal);background:var(--teal-bg);}
+.chip.sel.c-r{background:var(--accent);color:#fff;border-color:var(--accent);}.chip.sel.c-g{background:var(--gold);color:var(--ink);border-color:var(--gold);}.chip.sel.c-s{background:var(--steel);color:#fff;border-color:var(--steel);}.chip.sel.c-t{background:var(--teal);color:#fff;border-color:var(--teal);}
+.ib{border-radius:var(--r);padding:13px 17px;display:flex;gap:11px;align-items:flex-start;margin-bottom:18px;font-size:.87em;line-height:1.65;}.ib.red{background:var(--acc-bg);border:1px solid var(--acc-brd);color:var(--acc2);}.ib.gold{background:var(--gold-bg);border:1px solid var(--gold-brd);color:var(--gold2);}.ib.steel{background:var(--stl-bg);border:1px solid var(--stl-brd);color:var(--steel);}.ib.teal{background:var(--teal-bg);border:1px solid var(--teal-brd);color:var(--teal);}.ib.orange{background:var(--orange-bg);border:1px solid var(--orange-brd);color:var(--orange-d);}.ib .ii{font-size:1.15em;flex-shrink:0;margin-top:1px;}.ib p strong{color:inherit;}
+.manif-card{border-radius:var(--r2);overflow:hidden;margin-bottom:14px;border:1px solid var(--border);transition:border-color .25s;background:var(--card);}.manif-card:focus-within{border-color:var(--stl-brd);}
+.manif-hdr{padding:14px 20px;display:flex;align-items:center;gap:12px;cursor:pointer;user-select:none;background:var(--card2);transition:background .2s;}.manif-hdr:hover{background:var(--stl-bg);}
+.manif-num{width:34px;height:34px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:.92em;font-weight:700;color:var(--gold2);background:var(--gold-bg);border:1px solid var(--gold-brd);}
+.manif-txt{flex:1;}.manif-label{font-size:.66em;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--steel);margin-bottom:2px;}.manif-title{font-size:.87em;color:var(--ink);line-height:1.5;}
+.manif-toggle{width:28px;height:28px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:var(--card2);border:1px solid var(--border);color:var(--ink3);font-size:.75em;transition:all .25s;}.manif-toggle.open{background:var(--stl-bg);color:var(--steel);transform:rotate(180deg);}
+.manif-body{padding:0 20px 20px;display:none;}.manif-body.open{display:block;}
+.nivel-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;}
+.nivel-btn{flex:1;min-width:80px;padding:11px 8px;border-radius:var(--r);border:2px solid;text-align:center;cursor:pointer;font-size:.77em;font-weight:700;transition:all .2s;}.nivel-btn input{display:none;}
+.nb-no{border-color:var(--teal-brd);color:var(--teal);background:var(--teal-bg);}.nb-leve{border-color:var(--gold-brd);color:var(--gold2);background:var(--gold-bg);}.nb-mod{border-color:var(--orange-brd);color:var(--orange-d);background:var(--orange-bg);}.nb-alto{border-color:var(--acc-brd);color:var(--acc2);background:var(--acc-bg);}
+.nb-no.sel{background:var(--teal);color:#fff;border-color:var(--teal);}.nb-leve.sel{background:var(--gold);color:var(--ink);border-color:var(--gold);}.nb-mod.sel{background:var(--orange);color:#fff;border-color:var(--orange);}.nb-alto.sel{background:var(--accent);color:#fff;border-color:var(--accent);}
+.cc{text-align:right;font-size:.7em;color:var(--ink3);margin-top:3px;}.cc.w{color:var(--gold2);}.cc.o{color:var(--accent);}
+.gps-row{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:end;margin-bottom:8px;}@media(max-width:480px){.gps-row{grid-template-columns:1fr;}}
+.btn-gps{padding:10px 16px;background:var(--stl-bg);border:1px solid var(--stl-brd);border-radius:var(--r);color:var(--steel);font-family:var(--font-b);font-size:.84em;font-weight:600;cursor:pointer;white-space:nowrap;transition:all .2s;}.btn-gps:hover{background:rgba(0,87,168,.16);}
+.gps-st{font-size:.79em;margin-top:4px;}.gps-st.ok{color:var(--teal);}.gps-st.err{color:var(--accent);}
+.photo-zone{border:2px dashed var(--border);border-radius:var(--r2);padding:26px;text-align:center;background:var(--card2);cursor:pointer;transition:all .2s;}.photo-zone:hover{border-color:var(--steel);background:var(--stl-bg);}.photo-zone p{font-size:.84em;color:var(--ink3);margin-top:6px;}
+.photo-preview{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}.photo-thumb{width:80px;height:80px;object-fit:cover;border-radius:8px;border:2px solid var(--gold-brd);}
+.nav-btns{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:8px;padding-top:20px;border-top:1px solid var(--brd2);}
+.btn{padding:11px 24px;border-radius:var(--r);font-family:var(--font-b);font-size:.9em;font-weight:600;cursor:pointer;border:none;transition:all .2s;display:flex;align-items:center;gap:7px;}.btn-prev{background:var(--card2);color:var(--ink2);border:1.5px solid var(--border);}.btn-prev:hover{background:var(--brd2);}
+.btn-next{background:var(--steel);color:#fff;box-shadow:0 4px 18px rgba(0,87,168,.3);}.btn-next:hover{background:#00468a;transform:translateY(-1px);}
+.btn-submit{background:linear-gradient(135deg,var(--gold),#b8923e);color:var(--ink);box-shadow:0 4px 18px rgba(200,168,75,.4);padding:13px 28px;font-size:.95em;font-weight:700;}
+.btn-draft{background:transparent;color:var(--ink3);border:1.5px solid var(--border);font-size:.82em;padding:8px 16px;}.btn-draft:hover{color:var(--steel);border-color:var(--stl-brd);}
+.success-screen{display:none;text-align:center;padding:52px 28px;background:var(--card);border:1px solid var(--border);border-radius:var(--r3);box-shadow:var(--sh);}.success-screen.vis{display:block;}.success-ico{font-size:3.5em;margin-bottom:14px;}
+.success-screen h2{font-family:var(--font-d);font-size:1.8em;font-weight:800;color:var(--teal);margin-bottom:10px;font-style:italic;}.success-screen p{color:var(--ink2);font-size:.9em;max-width:440px;margin:0 auto 20px;line-height:1.7;}
+.success-code{display:inline-block;padding:8px 20px;background:var(--teal-bg);border:1px solid var(--teal-brd);border-radius:8px;font-family:var(--font-d);font-size:1.1em;font-weight:700;color:var(--teal);margin-bottom:22px;letter-spacing:.06em;}
+.btn-nuevo{padding:11px 24px;background:var(--steel);color:#fff;border:none;border-radius:var(--r);font-family:var(--font-b);font-size:.9em;font-weight:700;cursor:pointer;}
+.score-box{background:var(--gold-bg);border:1px solid var(--gold-brd);border-radius:var(--r2);padding:14px 20px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.score-lbl{font-size:.78em;font-weight:600;color:var(--gold2);text-transform:uppercase;letter-spacing:.06em;}.score-val{font-family:var(--font-d);font-size:1.3em;font-weight:800;}
+.footer{border-top:1px solid var(--border);padding:13px 32px;display:flex;justify-content:space-between;align-items:center;font-size:.72em;color:var(--ink3);flex-wrap:wrap;gap:8px;background:var(--surface);}.footer b{color:var(--ink);}
+/* Alerta crítica roja para PP7 */
+.alerta-critica{background:rgba(192,57,43,.06);border:1.5px solid rgba(192,57,43,.3);border-left:4px solid var(--acc2);border-radius:var(--r2);padding:16px 20px;margin-bottom:22px;}
+.alerta-critica h3{font-family:var(--font-d);font-size:.95em;font-weight:700;color:var(--acc2);margin-bottom:6px;}
+.alerta-critica p{font-size:.84em;color:var(--ink2);line-height:1.65;}
+</style>
+</head>
+<body>
+<div class="stripe"></div>
+<div class="topbar">
+  <div class="tb-brand"><div style="background:#fff;border-radius:7px;padding:6px 14px;display:flex;align-items:center;box-shadow:0 1px 6px rgba(0,0,0,.12);">
+      <div style="display:flex;flex-direction:column;align-items:center;line-height:1.2;">
+        <span style="font-weight:800;font-size:1.2em;color:#002855;letter-spacing:.05em;">GESEG</span>
+        <span style="font-size:.55em;font-weight:600;color:#0057A8;letter-spacing:.03em;">Gestión de la Seguridad S.A.S.</span>
+      </div>
+    </div>
+    <div style="width:1px;height:28px;background:rgba(0,40,85,.15);flex-shrink:0;"></div>
+    <div class="tb-name">OSCC — Barranquilla 2026<span>Fichas de Levantamiento · Problemas Públicos</span></div>
+  </div>
+  <div class="tb-pills">
+    <span class="pill pill-teal">Problema Público N° 8</span>
+    <span class="pill pill-gold">NNA Escolarizados · Entornos Educativos</span>
+  </div>
+</div>
+<div class="hero">
+  <div class="hero-grid"></div><div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="prob-badge">Problema Público Priorizado · Barrio Rebolo · Diagnóstico Territorial</div>
+    <h1>Ficha de Levantamiento:<br><em>NNA Escolarizados</em><br>y Violencia en Entornos Educativos</h1>
+    <div class="prob-text">
+      <strong>Problema Público:</strong> Confluencia en la población de menores y adolescentes escolarizados de <strong>múltiples factores de riesgo familiar y comunitario</strong>, que desencadenan episodios de violencia interpersonal al interior de las instituciones educativas o en sus alrededores.
+    </div>
+    <div class="zones-row">
+      <div class="zone-chip"><div class="dot dot-red"></div> Barrio Rebolo</div>
+      <div class="zone-chip"><div class="dot dot-red"></div> Entornos Educativos</div>
+      <div class="zone-chip"><div class="dot dot-gold"></div> 6 manifestaciones</div>
+      <div class="zone-chip"><div class="dot dot-gold"></div> Protección NNA</div>
+    </div>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-num">6<em> m.</em></div><div class="stat-lbl">Manifestaciones</div></div>
+      <div class="stat-sep"></div>
+      <div class="stat"><div class="stat-num">5<em> sec.</em></div><div class="stat-lbl">Secciones</div></div>
+      <div class="stat-sep"></div>
+      <div class="stat"><div class="stat-num">2026</div><div class="stat-lbl">Vigencia</div></div>
+      <div class="stat-sep"></div>
+      <div class="stat"><div class="stat-num">🔒</div><div class="stat-lbl">Confidencial</div></div>
+    </div>
+  </div>
+</div>
+<div class="wrap">
+  <div id="successScreen" class="success-screen">
+    <div class="success-ico">✅</div><h2>¡Ficha enviada con éxito!</h2>
+    <p>El levantamiento ha sido registrado. La información sobre NNA será tratada con los protocolos de protección de menores vigentes.</p>
+    <div class="success-code" id="successCodigo"></div><br>
+    <button class="btn-nuevo" onclick="nuevaFicha()">+ Nueva Ficha</button>
+  </div>
+  <div id="fichaFormContainer">
+    <div class="prog-bar-wrap">
+      <div class="prog-top"><span class="prog-label">Progreso de la ficha</span><span class="prog-pct" id="pct">0%</span></div>
+      <div class="prog-track"><div class="prog-fill" id="fill"></div></div>
+      <div class="prog-steps">
+        <div class="ps active" onclick="goTo(0)">1. Identificación</div>
+        <div class="ps" onclick="goTo(1)">2. Contexto</div>
+        <div class="ps" onclick="goTo(2)">3. Las 6 Manifestaciones</div>
+        <div class="ps" onclick="goTo(3)">4. Factores de Riesgo NNA</div>
+        <div class="ps" onclick="goTo(4)">5. Cierre y Envío</div>
+      </div>
+    </div>
+    <form id="fichaForm">
+    <input type="hidden" name="codigo_ficha" id="codigoFicha">
+    <input type="hidden" name="tipo_problema" value="PP8-NNA-ESCOLARIZADOS">
+    
+    <div class="section vis" id="s0">
+      <div class="card">
+        <div class="card-hdr"><div class="c-ico ci-stl">📋</div><div><div class="c-sub">Sección 1 de 5</div><div class="c-title">Identificación del Levantamiento</div></div></div>
+        <div class="card-body">
+          <div class="ib red"><span class="ii">🔒</span><p><strong>Confidencialidad:</strong> Esta ficha contiene información de seguridad de carácter restringido. Solo debe ser diligenciada por funcionarios autorizados de la OSCC o consultores del proyecto VIRTUS GLOBAL.</p></div>
+          <div class="fld-row">
+            <div class="fld"><label class="lbl">Fecha del levantamiento <span class="req">*</span></label><input type="date" name="fecha" required></div>
+            <div class="fld"><label class="lbl">Hora de inicio <span class="req">*</span></label><input type="time" name="hora_inicio" required></div>
+          </div>
+          <div class="fld"><label class="lbl">Nombre del responsable <span class="req">*</span></label><input type="text" name="responsable" placeholder="Nombre completo" required></div>
+          <div class="fld-row">
+            <div class="fld"><label class="lbl">Cargo / Rol</label>
+              <select name="cargo"><option value="">Seleccionar...</option><option>Gestor de Convivencia — OSCC</option><option>Analista Territorial — OSCC</option><option>Consultor — VIRTUS GLOBAL</option><option>Funcionario Alcaldía Local</option><option>Otro</option></select></div>
+            <div class="fld"><label class="lbl">Localidad</label>
+              <select name="localidad"><option value="suroriente" selected>Suroriente</option><option>Norte-Centro Histórico</option><option>Sur Occidente</option><option>Riomar</option><option>Metropolitana</option></select></div>
+          </div>
+          <div class="fld"><label class="lbl">Barrio / Sector específico <span class="req">*</span></label><input type="text" name="barrio_sector" value="Rebolo" required></div>
+          <div class="fld"><label class="lbl">Tipo de levantamiento</label>
+            <div class="opts h">
+              <label class="opt"><input type="radio" name="tipo_levant" value="campo"> 🚶 Recorrido de campo</label>
+              <label class="opt"><input type="radio" name="tipo_levant" value="mixto"> 📋 Mixto</label>
+              <label class="opt"><input type="radio" name="tipo_levant" value="taller"> 👥 Taller comunitario</label>
+              <label class="opt"><input type="radio" name="tipo_levant" value="institucional"> 🏛️ Análisis institucional</label>
+            </div></div>
+        </div>
+      </div>
+      <div class="nav-btns"><span></span><button type="button" class="btn btn-next" onclick="goTo(1)">Siguiente → Contexto</button></div>
+    </div>
+    <div class="section" id="s1">
+      <div class="card">
+        <div class="card-hdr"><div class="c-ico ci-gold">🏘️</div><div><div class="c-sub">Sección 2 de 5</div><div class="c-title">Contexto del Sector Observado</div></div></div>
+        <div class="card-body">
+          <div class="fld"><label class="lbl">Descripción general del sector</label>
+            <textarea name="desc_sector" maxlength="600" placeholder="Contexto físico y social del sector..."></textarea>
+            <div class="cc">600 caracteres restantes</div></div>
+          <div class="fld-row">
+            <div class="fld"><label class="lbl">Tipo de zona</label>
+              <select name="tipo_zona"><option value="">Seleccionar...</option><option>Residencial popular</option><option>Comercial / mixta</option><option>Corredor fluvial</option><option>Periférica</option></select></div>
+            <div class="fld"><label class="lbl">Densidad poblacional</label>
+              <select name="densidad"><option value="">Seleccionar...</option><option>Baja</option><option>Media</option><option>Alta</option></select></div>
+          </div>
+          <div class="fld"><label class="lbl">Tiempo de la problemática en el sector</label>
+            <div class="opts h">
+              <label class="opt"><input type="radio" name="tiempo" value="menos1"> Menos de 1 año</label>
+              <label class="opt"><input type="radio" name="tiempo" value="1-3"> 1 a 3 años</label>
+              <label class="opt"><input type="radio" name="tiempo" value="3-5"> 3 a 5 años</label>
+              <label class="opt"><input type="radio" name="tiempo" value="mas5"> Más de 5 años</label>
+              <label class="opt"><input type="radio" name="tiempo" value="nr"> Se desconoce</label>
+            </div></div>
+          <div class="fld"><label class="lbl">¿Intervenciones previas de la institucionalidad?</label>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="interv" value="no"> No — primera intervención</label>
+              <label class="opt"><input type="radio" name="interv" value="sin_ef"> Sí — sin resultados significativos</label>
+              <label class="opt"><input type="radio" name="interv" value="temporal"> Sí — con resultados temporales</label>
+            </div></div>
+          <div class="fld"><label class="lbl">Localización GPS del punto de observación</label>
+            <div class="gps-row">
+              <div class="fld" style="margin:0"><label class="lbl">Latitud</label><input type="number" step="0.000001" id="lat1" name="latitud" placeholder="10.970336"></div>
+              <div class="fld" style="margin:0"><label class="lbl">Longitud</label><input type="number" step="0.000001" id="lng1" name="longitud" placeholder="-74.781063"></div>
+              <button type="button" class="btn-gps" onclick="getGPS('lat1','lng1','gst1')">📍 GPS</button>
+            </div><div class="gps-st" id="gst1"></div></div>
+        </div>
+      </div>
+      <div class="nav-btns">
+        <button type="button" class="btn btn-prev" onclick="goTo(0)">← Anterior</button>
+        <button type="button" class="btn btn-next" onclick="goTo(2)">Siguiente → Manifestaciones</button>
+      </div>
+    </div>
+
+    <!-- SEC 3 — MANIFESTACIONES -->
+    <div class="section" id="s2">
+      <div class="card">
+        <div class="card-hdr"><div class="c-ico ci-teal">🏫</div><div><div class="c-sub">Sección 3 de 5</div><div class="c-title">Las 6 Manifestaciones — NNA Escolarizados y Entornos Educativos</div></div></div>
+        <div class="card-body">
+          <div class="ib teal"><span class="ii">🛡️</span><p><strong>Protección de NNA:</strong> Esta ficha trata sobre menores de edad. Toda la información recolectada debe respetar estrictamente los protocolos de protección de menores. No registre datos que permitan identificar a niños, niñas o adolescentes específicos.</p></div>
+          <div class="score-box">
+            <span class="score-lbl">📊 Puntuación acumulada</span>
+            <span class="score-val" id="scoreVal" style="color:var(--teal)">0 / 18 pts (0%)</span>
+          </div>
+          <div class="manif-card" id="mc1">
+            <div class="manif-hdr">
+              <div class="manif-num">1</div>
+              <div class="manif-txt">
+                <div class="manif-label">Manifestación 1 · Agresiones dentro y fuera de las instituciones educativas</div>
+                <div class="manif-title">Episodios de agresiones entre estudiantes, entre estos y docentes, y entre estudiantes y la comunidad, tanto en espacios públicos como al interior de los colegios del sector.</div>
+              </div>
+              <div class="manif-toggle">▼</div>
+            </div>
+            <div class="manif-body">
+              <p class="sub-h" style="font-size:.72em;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink3);margin:16px 0 10px;display:flex;align-items:center;gap:8px;">Nivel de presencia en el sector<span style="flex:1;height:1px;background:var(--brd2);display:block;"></span></p>
+              <div class="nivel-row">
+                <label class="nivel-btn nb-no"><input type="radio" name="m1_nivel" value="no-presente"> 🟢 No presente</label>
+                <label class="nivel-btn nb-leve"><input type="radio" name="m1_nivel" value="leve"> 🟡 Leve</label>
+                <label class="nivel-btn nb-mod"><input type="radio" name="m1_nivel" value="moderada"> 🟠 Moderada</label>
+                <label class="nivel-btn nb-alto"><input type="radio" name="m1_nivel" value="alta"> 🔴 Alta</label>
+              </div>
+              <div class="fld">
+                <label class="lbl">Descripción de la situación observada <span class="req">*</span></label>
+                <textarea name="m1_desc" maxlength="500" placeholder="Describa concretamente cómo se evidencia esta situación en el sector visitado..."></textarea>
+                <div class="cc">500 caracteres restantes</div>
+              </div>
+              <div class="fld"><label class="lbl">Tipo de agresiones predominantes</label>
+              <div class="chips">
+                <label class="chip c-r"><input type="checkbox" name="m1_tipo" value="fisica"> Agresión física / golpes</label>
+                <label class="chip c-r"><input type="checkbox" name="m1_tipo" value="verbal"> Agresión verbal</label>
+                <label class="chip c-r"><input type="checkbox" name="m1_tipo" value="bullying"> Bullying / matoneo</label>
+                <label class="chip c-r"><input type="checkbox" name="m1_tipo" value="armas"> Con armas</label>
+                <label class="chip c-g"><input type="checkbox" name="m1_tipo" value="ciberbullying"> Ciberbullying</label>
+              </div></div>
+              <div class="fld">
+                <label class="lbl">Fuente de información</label>
+                <div class="opts h">
+                  <label class="opt"><input type="radio" name="m1_fuente" value="obs"> Observación directa</label>
+                  <label class="opt"><input type="radio" name="m1_fuente" value="com"> Relato comunitario</label>
+                  <label class="opt"><input type="radio" name="m1_fuente" value="lid"> Líder comunitario</label>
+                  <label class="opt"><input type="radio" name="m1_fuente" value="inst"> Fuente institucional</label>
+                </div>
+              </div>
+            </div>
+          </div><div class="manif-card" id="mc2">
+            <div class="manif-hdr">
+              <div class="manif-num">2</div>
+              <div class="manif-txt">
+                <div class="manif-label">Manifestación 2 · Reflejo de violencia familiar en el entorno escolar</div>
+                <div class="manif-title">Procesos de reflejo de prácticas de machismo y violencia psicológica del entorno familiar en el espacio escolar. Los estudiantes reproducen en el colegio los patrones de violencia que viven en casa.</div>
+              </div>
+              <div class="manif-toggle">▼</div>
+            </div>
+            <div class="manif-body">
+              <p class="sub-h" style="font-size:.72em;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink3);margin:16px 0 10px;display:flex;align-items:center;gap:8px;">Nivel de presencia en el sector<span style="flex:1;height:1px;background:var(--brd2);display:block;"></span></p>
+              <div class="nivel-row">
+                <label class="nivel-btn nb-no"><input type="radio" name="m2_nivel" value="no-presente"> 🟢 No presente</label>
+                <label class="nivel-btn nb-leve"><input type="radio" name="m2_nivel" value="leve"> 🟡 Leve</label>
+                <label class="nivel-btn nb-mod"><input type="radio" name="m2_nivel" value="moderada"> 🟠 Moderada</label>
+                <label class="nivel-btn nb-alto"><input type="radio" name="m2_nivel" value="alta"> 🔴 Alta</label>
+              </div>
+              <div class="fld">
+                <label class="lbl">Descripción de la situación observada <span class="req">*</span></label>
+                <textarea name="m2_desc" maxlength="500" placeholder="Describa concretamente cómo se evidencia esta situación en el sector visitado..."></textarea>
+                <div class="cc">500 caracteres restantes</div>
+              </div>
+              <div class="fld"><label class="lbl">Manifestaciones de violencia de género observadas en el entorno escolar</label>
+              <div class="chips">
+                <label class="chip c-r"><input type="checkbox" name="m2_vg" value="control"> Control y celos entre parejas jóvenes</label>
+                <label class="chip c-r"><input type="checkbox" name="m2_vg" value="acoso"> Acoso / hostigamiento</label>
+                <label class="chip c-r"><input type="checkbox" name="m2_vg" value="lenguaje"> Lenguaje machista normalizado</label>
+                <label class="chip c-s"><input type="checkbox" name="m2_vg" value="ninguno"> No observadas</label>
+              </div></div>
+              <div class="fld">
+                <label class="lbl">Fuente de información</label>
+                <div class="opts h">
+                  <label class="opt"><input type="radio" name="m2_fuente" value="obs"> Observación directa</label>
+                  <label class="opt"><input type="radio" name="m2_fuente" value="com"> Relato comunitario</label>
+                  <label class="opt"><input type="radio" name="m2_fuente" value="lid"> Líder comunitario</label>
+                  <label class="opt"><input type="radio" name="m2_fuente" value="inst"> Fuente institucional</label>
+                </div>
+              </div>
+            </div>
+          </div><div class="manif-card" id="mc3">
+            <div class="manif-hdr">
+              <div class="manif-num">3</div>
+              <div class="manif-txt">
+                <div class="manif-label">Manifestación 3 · Solicitudes de rectores por problemáticas críticas</div>
+                <div class="manif-title">Los rectores de los colegios del sector elevan solicitudes formales o informales ante instituciones debido a situaciones críticas: venta de estupefacientes, pandillas, violencia, o grupos que operan dentro o cerca del plantel.</div>
+              </div>
+              <div class="manif-toggle">▼</div>
+            </div>
+            <div class="manif-body">
+              <p class="sub-h" style="font-size:.72em;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink3);margin:16px 0 10px;display:flex;align-items:center;gap:8px;">Nivel de presencia en el sector<span style="flex:1;height:1px;background:var(--brd2);display:block;"></span></p>
+              <div class="nivel-row">
+                <label class="nivel-btn nb-no"><input type="radio" name="m3_nivel" value="no-presente"> 🟢 No presente</label>
+                <label class="nivel-btn nb-leve"><input type="radio" name="m3_nivel" value="leve"> 🟡 Leve</label>
+                <label class="nivel-btn nb-mod"><input type="radio" name="m3_nivel" value="moderada"> 🟠 Moderada</label>
+                <label class="nivel-btn nb-alto"><input type="radio" name="m3_nivel" value="alta"> 🔴 Alta</label>
+              </div>
+              <div class="fld">
+                <label class="lbl">Descripción de la situación observada <span class="req">*</span></label>
+                <textarea name="m3_desc" maxlength="500" placeholder="Describa concretamente cómo se evidencia esta situación en el sector visitado..."></textarea>
+                <div class="cc">500 caracteres restantes</div>
+              </div>
+              <div class="fld"><label class="lbl">Tipo de problemáticas reportadas por rectores</label>
+              <div class="chips">
+                <label class="chip c-r"><input type="checkbox" name="m3_prob" value="drogas"> Venta / consumo de SPA</label>
+                <label class="chip c-r"><input type="checkbox" name="m3_prob" value="pandillas"> Pandillas o grupos dentro del colegio</label>
+                <label class="chip c-r"><input type="checkbox" name="m3_prob" value="armas_col"> Porte de armas blancas</label>
+                <label class="chip c-r"><input type="checkbox" name="m3_prob" value="amenazas_est"> Amenazas entre estudiantes</label>
+                <label class="chip c-g"><input type="checkbox" name="m3_prob" value="externa"> Influencia de actores externos</label>
+              </div></div>
+              <div class="fld">
+                <label class="lbl">Fuente de información</label>
+                <div class="opts h">
+                  <label class="opt"><input type="radio" name="m3_fuente" value="obs"> Observación directa</label>
+                  <label class="opt"><input type="radio" name="m3_fuente" value="com"> Relato comunitario</label>
+                  <label class="opt"><input type="radio" name="m3_fuente" value="lid"> Líder comunitario</label>
+                  <label class="opt"><input type="radio" name="m3_fuente" value="inst"> Fuente institucional</label>
+                </div>
+              </div>
+            </div>
+          </div><div class="manif-card" id="mc4">
+            <div class="manif-hdr">
+              <div class="manif-num">4</div>
+              <div class="manif-txt">
+                <div class="manif-label">Manifestación 4 · Deterioro de equipamientos escolares</div>
+                <div class="manif-title">Deterioro físico de los equipamientos escolares y del entorno inmediato: infraestructura dañada, vandalismo, mobiliario destruido, falta de mantenimiento, y deterioro de zonas verdes o áreas comunes.</div>
+              </div>
+              <div class="manif-toggle">▼</div>
+            </div>
+            <div class="manif-body">
+              <p class="sub-h" style="font-size:.72em;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink3);margin:16px 0 10px;display:flex;align-items:center;gap:8px;">Nivel de presencia en el sector<span style="flex:1;height:1px;background:var(--brd2);display:block;"></span></p>
+              <div class="nivel-row">
+                <label class="nivel-btn nb-no"><input type="radio" name="m4_nivel" value="no-presente"> 🟢 No presente</label>
+                <label class="nivel-btn nb-leve"><input type="radio" name="m4_nivel" value="leve"> 🟡 Leve</label>
+                <label class="nivel-btn nb-mod"><input type="radio" name="m4_nivel" value="moderada"> 🟠 Moderada</label>
+                <label class="nivel-btn nb-alto"><input type="radio" name="m4_nivel" value="alta"> 🔴 Alta</label>
+              </div>
+              <div class="fld">
+                <label class="lbl">Descripción de la situación observada <span class="req">*</span></label>
+                <textarea name="m4_desc" maxlength="500" placeholder="Describa concretamente cómo se evidencia esta situación en el sector visitado..."></textarea>
+                <div class="cc">500 caracteres restantes</div>
+              </div>
+              <div class="fld"><label class="lbl">Tipo de deterioro observado</label>
+              <div class="chips">
+                <label class="chip c-r"><input type="checkbox" name="m4_det" value="infra"> Infraestructura física dañada</label>
+                <label class="chip c-r"><input type="checkbox" name="m4_det" value="vandal"> Vandalismo / grafiti</label>
+                <label class="chip c-r"><input type="checkbox" name="m4_det" value="mob"> Mobiliario destruido</label>
+                <label class="chip c-g"><input type="checkbox" name="m4_det" value="entorno"> Deterioro del entorno inmediato</label>
+              </div></div>
+              <div class="fld">
+                <label class="lbl">Fuente de información</label>
+                <div class="opts h">
+                  <label class="opt"><input type="radio" name="m4_fuente" value="obs"> Observación directa</label>
+                  <label class="opt"><input type="radio" name="m4_fuente" value="com"> Relato comunitario</label>
+                  <label class="opt"><input type="radio" name="m4_fuente" value="lid"> Líder comunitario</label>
+                  <label class="opt"><input type="radio" name="m4_fuente" value="inst"> Fuente institucional</label>
+                </div>
+              </div>
+            </div>
+          </div><div class="manif-card" id="mc5">
+            <div class="manif-hdr">
+              <div class="manif-num">5</div>
+              <div class="manif-txt">
+                <div class="manif-label">Manifestación 5 · Grupos que limitan el acceso a los centros educativos</div>
+                <div class="manif-title">Presencia de grupos sociales en el espacio público alrededor de los colegios que generan limitaciones en el acceso: intimidación, cobros por paso, actividades ilegales en zonas de ingreso a los planteles.</div>
+              </div>
+              <div class="manif-toggle">▼</div>
+            </div>
+            <div class="manif-body">
+              <p class="sub-h" style="font-size:.72em;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink3);margin:16px 0 10px;display:flex;align-items:center;gap:8px;">Nivel de presencia en el sector<span style="flex:1;height:1px;background:var(--brd2);display:block;"></span></p>
+              <div class="nivel-row">
+                <label class="nivel-btn nb-no"><input type="radio" name="m5_nivel" value="no-presente"> 🟢 No presente</label>
+                <label class="nivel-btn nb-leve"><input type="radio" name="m5_nivel" value="leve"> 🟡 Leve</label>
+                <label class="nivel-btn nb-mod"><input type="radio" name="m5_nivel" value="moderada"> 🟠 Moderada</label>
+                <label class="nivel-btn nb-alto"><input type="radio" name="m5_nivel" value="alta"> 🔴 Alta</label>
+              </div>
+              <div class="fld">
+                <label class="lbl">Descripción de la situación observada <span class="req">*</span></label>
+                <textarea name="m5_desc" maxlength="500" placeholder="Describa concretamente cómo se evidencia esta situación en el sector visitado..."></textarea>
+                <div class="cc">500 caracteres restantes</div>
+              </div>
+              <div class="fld"><label class="lbl">Tipo de limitación al acceso</label>
+              <div class="chips">
+                <label class="chip c-r"><input type="checkbox" name="m5_limit" value="intimidacion"> Intimidación en entradas</label>
+                <label class="chip c-r"><input type="checkbox" name="m5_limit" value="cobro_paso"> Cobro por paso</label>
+                <label class="chip c-r"><input type="checkbox" name="m5_limit" value="expendio"> Expendio de drogas en accesos</label>
+                <label class="chip c-g"><input type="checkbox" name="m5_limit" value="grupos_zona"> Grupos ocupando zona de entrada</label>
+              </div></div>
+              <div class="fld">
+                <label class="lbl">Fuente de información</label>
+                <div class="opts h">
+                  <label class="opt"><input type="radio" name="m5_fuente" value="obs"> Observación directa</label>
+                  <label class="opt"><input type="radio" name="m5_fuente" value="com"> Relato comunitario</label>
+                  <label class="opt"><input type="radio" name="m5_fuente" value="lid"> Líder comunitario</label>
+                  <label class="opt"><input type="radio" name="m5_fuente" value="inst"> Fuente institucional</label>
+                </div>
+              </div>
+            </div>
+          </div><div class="manif-card" id="mc6">
+            <div class="manif-hdr">
+              <div class="manif-num">6</div>
+              <div class="manif-txt">
+                <div class="manif-label">Manifestación 6 · Amenazas informales a docentes</div>
+                <div class="manif-title">Reportes informales de amenazas dirigidas a docentes — sin denuncia formal en la mayoría de los casos — que generan temor en el personal educativo y afectan el normal funcionamiento de las instituciones.</div>
+              </div>
+              <div class="manif-toggle">▼</div>
+            </div>
+            <div class="manif-body">
+              <p class="sub-h" style="font-size:.72em;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink3);margin:16px 0 10px;display:flex;align-items:center;gap:8px;">Nivel de presencia en el sector<span style="flex:1;height:1px;background:var(--brd2);display:block;"></span></p>
+              <div class="nivel-row">
+                <label class="nivel-btn nb-no"><input type="radio" name="m6_nivel" value="no-presente"> 🟢 No presente</label>
+                <label class="nivel-btn nb-leve"><input type="radio" name="m6_nivel" value="leve"> 🟡 Leve</label>
+                <label class="nivel-btn nb-mod"><input type="radio" name="m6_nivel" value="moderada"> 🟠 Moderada</label>
+                <label class="nivel-btn nb-alto"><input type="radio" name="m6_nivel" value="alta"> 🔴 Alta</label>
+              </div>
+              <div class="fld">
+                <label class="lbl">Descripción de la situación observada <span class="req">*</span></label>
+                <textarea name="m6_desc" maxlength="500" placeholder="Describa concretamente cómo se evidencia esta situación en el sector visitado..."></textarea>
+                <div class="cc">500 caracteres restantes</div>
+              </div>
+              <div class="fld"><label class="lbl">¿Se han presentado denuncias formales?</label>
+              <div class="opts h">
+                <label class="opt"><input type="radio" name="m6_denuncia" value="si"> Sí — con proceso activo</label>
+                <label class="opt"><input type="radio" name="m6_denuncia" value="informal"> Solo reporte informal</label>
+                <label class="opt"><input type="radio" name="m6_denuncia" value="no"> No — por temor a represalias</label>
+              </div></div>
+              <div class="fld">
+                <label class="lbl">Fuente de información</label>
+                <div class="opts h">
+                  <label class="opt"><input type="radio" name="m6_fuente" value="obs"> Observación directa</label>
+                  <label class="opt"><input type="radio" name="m6_fuente" value="com"> Relato comunitario</label>
+                  <label class="opt"><input type="radio" name="m6_fuente" value="lid"> Líder comunitario</label>
+                  <label class="opt"><input type="radio" name="m6_fuente" value="inst"> Fuente institucional</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-btns">
+        <button type="button" class="btn btn-prev" onclick="goTo(1)">← Anterior</button>
+        <button type="button" class="btn btn-next" onclick="goTo(3)">Siguiente → Factores de Riesgo</button>
+      </div>
+    </div>
+
+    <!-- SEC 4 — FACTORES DE RIESGO NNA -->
+    <div class="section" id="s3">
+      <div class="card">
+        <div class="card-hdr"><div class="c-ico ci-stl">🔍</div><div><div class="c-sub">Sección 4 de 5</div><div class="c-title">Factores de Riesgo, Instituciones y Ruta de Protección NNA</div></div></div>
+        <div class="card-body">
+          <div class="fld"><label class="lbl">Instituciones educativas identificadas en el sector</label>
+            <textarea name="inst_educ" maxlength="300" placeholder="Nombre(s) de colegio(s), jornada, nivel (primaria / bachillerato), número aproximado de estudiantes..."></textarea>
+            <div class="cc">300 caracteres restantes</div></div>
+          <div class="fld"><label class="lbl">Factores de riesgo familiar predominantes</label>
+            <div class="chips">
+              <label class="chip c-r"><input type="checkbox" name="fact_fam" value="vif"> Violencia intrafamiliar activa</label>
+              <label class="chip c-r"><input type="checkbox" name="fact_fam" value="ausencia"> Ausencia parental (padres en prisión / migrantes)</label>
+              <label class="chip c-r"><input type="checkbox" name="fact_fam" value="spa_hogar"> Consumo SPA en el hogar</label>
+              <label class="chip c-r"><input type="checkbox" name="fact_fam" value="pobreza"> Pobreza extrema</label>
+              <label class="chip c-g"><input type="checkbox" name="fact_fam" value="trabajo_inf"> Trabajo infantil</label>
+              <label class="chip c-g"><input type="checkbox" name="fact_fam" value="hacinamiento"> Hacinamiento en vivienda</label>
+            </div></div>
+          <div class="fld"><label class="lbl">Factores de riesgo comunitario</label>
+            <div class="chips">
+              <label class="chip c-r"><input type="checkbox" name="fact_com" value="control_terr"> Control territorial por grupos ilegales</label>
+              <label class="chip c-r"><input type="checkbox" name="fact_com" value="microtraf"> Microtráfico cerca del colegio</label>
+              <label class="chip c-r"><input type="checkbox" name="fact_com" value="reclutamiento"> Reclutamiento de menores por grupos</label>
+              <label class="chip c-s"><input type="checkbox" name="fact_com" value="falta_esp"> Falta de espacios recreativos</label>
+              <label class="chip c-s"><input type="checkbox" name="fact_com" value="desempleo_jov"> Desempleo juvenil alto</label>
+              <label class="chip c-t"><input type="checkbox" name="fact_com" value="estigma"> Estigma territorial del barrio</label>
+            </div></div>
+          <div class="fld"><label class="lbl">¿Existe ruta de atención a víctimas NNA en el sector?</label>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="ruta_nna" value="activa"> 🟢 Ruta activa y conocida por la comunidad</label>
+              <label class="opt"><input type="radio" name="ruta_nna" value="existe_des"> 🟡 Existe pero poco conocida</label>
+              <label class="opt"><input type="radio" name="ruta_nna" value="no_oper"> 🟠 Existe pero no opera efectivamente</label>
+              <label class="opt"><input type="radio" name="ruta_nna" value="no_existe"> 🔴 No existe ruta identificada</label>
+            </div></div>
+          <div class="fld"><label class="lbl">Entidades con presencia activa en entornos educativos del sector</label>
+            <div class="chips">
+              <label class="chip c-t"><input type="checkbox" name="ent_educ" value="icbf"> ICBF</label>
+              <label class="chip c-t"><input type="checkbox" name="ent_educ" value="comisaria"> Comisaría de Familia</label>
+              <label class="chip c-s"><input type="checkbox" name="ent_educ" value="policia_ci"> Policía de Infancia y Adolescencia</label>
+              <label class="chip c-s"><input type="checkbox" name="ent_educ" value="sec_edu"> Secretaría de Educación</label>
+              <label class="chip c-g"><input type="checkbox" name="ent_educ" value="ong"> ONG / cooperación</label>
+              <label class="chip c-r"><input type="checkbox" name="ent_educ" value="ninguna"> Ninguna</label>
+            </div></div>
+          <div class="fld"><label class="lbl">Nivel de articulación entre el colegio y las instituciones de protección</label>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="artic_inst" value="alta"> 🟢 Alta — hay protocolos activos y comunicación fluida</label>
+              <label class="opt"><input type="radio" name="artic_inst" value="media"> 🟡 Media — comunicación esporádica</label>
+              <label class="opt"><input type="radio" name="artic_inst" value="baja"> 🟠 Baja — el colegio actúa solo</label>
+              <label class="opt"><input type="radio" name="artic_inst" value="nula"> 🔴 Nula — no hay coordinación interinstitucional</label>
+            </div></div>
+          <div class="fld"><label class="lbl">Observaciones sobre factores de riesgo adicionales</label>
+            <textarea name="obs_riesgo" maxlength="500" placeholder="Describa cualquier otro factor de riesgo identificado en el entorno escolar o comunitario que afecte a los NNA del sector..."></textarea>
+            <div class="cc">500 caracteres restantes</div></div>
+          <div class="fld"><label class="lbl">Fotos del entorno educativo y sus alrededores (máx. 6)</label>
+            <input type="file" id="photos1" name="fotos" multiple accept="image/*" style="display:none">
+            <div class="photo-zone" id="photoZone1">
+              <div style="font-size:2em">📷</div>
+              <p>Fotografíe el entorno exterior del colegio, accesos, zonas de riesgo<br><small>JPG, PNG · Máx. 6 imágenes · Nunca fotografíe menores de edad</small></p>
+              <div class="photo-preview" id="photoPreview1"></div>
+            </div></div>
+        </div>
+      </div>
+      <div class="nav-btns">
+        <button type="button" class="btn btn-prev" onclick="goTo(2)">← Anterior</button>
+        <button type="button" class="btn btn-next" onclick="goTo(4)">Siguiente → Cierre</button>
+      </div>
+    </div>
+    
+    <div class="section" id="s4">
+      <div class="card">
+        <div class="card-hdr"><div class="c-ico ci-teal">✅</div><div><div class="c-sub">Sección 5 de 5</div><div class="c-title">Cierre y Envío de la Ficha</div></div></div>
+        <div class="card-body">
+          <div class="fld"><label class="lbl">Conclusión general del levantamiento <span class="req">*</span></label>
+            <textarea name="conclusion" maxlength="800" placeholder="Resuma hallazgos, nivel de urgencia y acciones institucionales prioritarias..." required></textarea>
+            <div class="cc">800 caracteres restantes</div></div>
+          <div class="fld"><label class="lbl">Nivel de urgencia de intervención</label>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="urgencia" value="baja"> 🟢 Baja — monitoreo trimestral</label>
+              <label class="opt"><input type="radio" name="urgencia" value="media"> 🟡 Media — intervención en próximo mes</label>
+              <label class="opt"><input type="radio" name="urgencia" value="alta"> 🟠 Alta — intervención en próximas 4 semanas</label>
+              <label class="opt"><input type="radio" name="urgencia" value="critica"> 🔴 Crítica — activación inmediata de protocolos</label>
+            </div></div>
+          <div class="fld"><label class="lbl">Acciones a activar</label>
+            <div class="chips">
+              <label class="chip c-r"><input type="checkbox" name="acc" value="sijin"> Alerta SIJIN</label>
+              <label class="chip c-r"><input type="checkbox" name="acc" value="fiscalia"> Fiscalía / CTI</label>
+              <label class="chip c-s"><input type="checkbox" name="acc" value="consejo"> Mesa Consejo Seguridad</label>
+              <label class="chip c-s"><input type="checkbox" name="acc" value="oscc"> Activar OSCC</label>
+              <label class="chip c-t"><input type="checkbox" name="acc" value="jac"> Reunión JAC</label>
+              <label class="chip c-t"><input type="checkbox" name="acc" value="icbf"> Articulación ICBF</label>
+              <label class="chip c-g"><input type="checkbox" name="acc" value="seg"> Seguimiento periódico</label>
+            </div></div>
+          <div class="fld"><label class="lbl">¿Requiere seguimiento?</label>
+            <div class="opts h">
+              <label class="opt"><input type="radio" name="seg" value="urgente"> 🔴 Urgente (&lt;2 semanas)</label>
+              <label class="opt"><input type="radio" name="seg" value="mensual"> 🟠 Ciclo mensual</label>
+              <label class="opt"><input type="radio" name="seg" value="trim"> 🟢 Ciclo trimestral</label>
+            </div></div>
+          <div class="fld-row">
+            <div class="fld"><label class="lbl">Personas consultadas</label><input type="number" name="n_personas" min="0" placeholder="0"></div>
+            <div class="fld"><label class="lbl">Hora de finalización</label><input type="time" name="hora_fin"></div>
+          </div>
+          <hr class="sep">
+          <div class="ib teal"><span class="ii">📝</span><p>Al presionar <strong>Enviar Ficha</strong> se generará un código único de registro. Guárdelo para trazabilidad.</p></div>
+        </div>
+      </div>
+      <div class="nav-btns">
+        <button type="button" class="btn btn-prev" onclick="goTo(3)">← Anterior</button>
+        <div style="display:flex;gap:10px;align-items:center;">
+          <button type="button" class="btn btn-draft">💾 Guardar borrador</button>
+          <button type="button" class="btn btn-submit" onclick="submitFicha()">✅ Enviar Ficha</button>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+<div class="footer">
+  <div><b>OSCC Barranquilla 2026</b> · Ficha PP8 · NNA Escolarizados · Entornos Educativos</div>
+  <div>VIRTUS GLOBAL · Consultoría Fase 2 · Barrio Rebolo · Confidencial</div>
+</div>
+<script>
+const TOTAL_SEC=5;let cur=0;
+function goTo(idx){if(idx<0||idx>=TOTAL_SEC)return;
+  document.querySelectorAll('.section').forEach((s,i)=>s.classList.toggle('vis',i===idx));
+  document.querySelectorAll('.ps').forEach((s,i)=>{s.classList.remove('active','done');if(i<idx)s.classList.add('done');if(i===idx)s.classList.add('active');});
+  cur=idx;const p=Math.round((cur/(TOTAL_SEC-1))*100);
+  document.getElementById('pct').textContent=p+'%';document.getElementById('fill').style.width=p+'%';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('.opt').forEach(o=>o.addEventListener('click',()=>{
+  const inp=o.querySelector('input'),n=inp.name;
+  document.querySelectorAll(`input[name="${n}"]`).forEach(i=>i.closest('.opt').classList.remove('sel'));
+  inp.checked=true;o.classList.add('sel');
+}));
+document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
+  const inp=c.querySelector('input');if(inp.type==='checkbox'){inp.checked=!inp.checked;c.classList.toggle('sel',inp.checked);}
+}));
+const nM={'no-presente':0,'leve':1,'moderada':2,'alta':3};
+document.querySelectorAll('.nivel-btn').forEach(b=>b.addEventListener('click',()=>{
+  const inp=b.querySelector('input'),n=inp.name;
+  document.querySelectorAll(`input[name="${n}"]`).forEach(i=>i.closest('.nivel-btn').classList.remove('sel'));
+  inp.checked=true;b.classList.add('sel');upScore();
+}));
+function upScore(){
+  let tot=0;for(let i=1;i<=6;i++){const s=document.querySelector(`input[name="m${i}_nivel"]:checked`);if(s)tot+=nM[s.value]||0;}
+  const mx=6*3,p=Math.round(tot/mx*100),el=document.getElementById('scoreVal');
+  if(el){el.textContent=tot+' / '+mx+' pts ('+p+'%)';el.style.color=p>=67?'#C0392B':p>=34?'#E07A28':'#0E9F6E';}
+}
+document.querySelectorAll('.manif-hdr').forEach(h=>h.addEventListener('click',()=>{
+  const body=h.nextElementSibling,t=h.querySelector('.manif-toggle');
+  const open=body.classList.toggle('open');t.classList.toggle('open',open);t.textContent=open?'▲':'▼';
+}));
+function getGPS(lId,gId,sId){
+  const st=document.getElementById(sId);st.textContent='⏳ Obteniendo...';st.className='gps-st';
+  if(!navigator.geolocation){st.textContent='✗ No disponible';st.className='gps-st err';return;}
+  navigator.geolocation.getCurrentPosition(
+    p=>{document.getElementById(lId).value=p.coords.latitude.toFixed(6);document.getElementById(gId).value=p.coords.longitude.toFixed(6);st.textContent='✓ '+p.coords.accuracy.toFixed(0)+'m';st.className='gps-st ok';},
+    e=>{st.textContent='✗ '+e.message;st.className='gps-st err';},{enableHighAccuracy:true,timeout:10000});
+}
+function submitFicha(){
+  const cod='PP8-REB-'+Date.now().toString(36).toUpperCase();
+  document.getElementById('codigoFicha').value=cod;
+  document.getElementById('fichaFormContainer').style.display='none';
+  document.getElementById('successScreen').classList.add('vis');
+  document.getElementById('successCodigo').textContent=cod;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nuevaFicha(){
+  document.getElementById('fichaFormContainer').style.display='';
+  document.getElementById('successScreen').classList.remove('vis');
+  document.getElementById('fichaForm').reset();
+  document.querySelectorAll('.opt,.chip,.nivel-btn').forEach(el=>el.classList.remove('sel'));
+  document.querySelectorAll('.manif-body').forEach(b=>b.classList.remove('open'));
+  document.querySelectorAll('.manif-toggle').forEach(t=>{t.classList.remove('open');t.textContent='▼';});
+  goTo(0);
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  const inp=document.getElementById('photos1');
+  if(inp){
+    inp.addEventListener('change',()=>{
+      const prev=document.getElementById('photoPreview1');if(!prev)return;prev.innerHTML='';
+      Array.from(inp.files).slice(0,6).forEach(f=>{const r=new FileReader();r.onload=e=>{const img=document.createElement('img');img.src=e.target.result;img.className='photo-thumb';prev.appendChild(img);};r.readAsDataURL(f);});
+    });
+    const z=document.getElementById('photoZone1');if(z)z.addEventListener('click',()=>inp.click());
+  }
+  document.querySelectorAll('textarea[maxlength]').forEach(ta=>{
+    const cc=ta.nextElementSibling;if(!cc||!cc.classList.contains('cc'))return;
+    const mx=+ta.getAttribute('maxlength');
+    ta.addEventListener('input',()=>{const rem=mx-ta.value.length;cc.textContent=rem+' caracteres restantes';cc.classList.toggle('w',rem<mx*.25&&rem>=mx*.1);cc.classList.toggle('o',rem<mx*.1);});
+  });
+});
+</script>
+</body></html>
