@@ -636,11 +636,48 @@ function getGPS(lId,gId,sId){
     p=>{document.getElementById(lId).value=p.coords.latitude.toFixed(6);document.getElementById(gId).value=p.coords.longitude.toFixed(6);st.textContent='✓ '+p.coords.accuracy.toFixed(0)+'m';st.className='gps-st ok';},
     e=>{st.textContent='✗ '+e.message;st.className='gps-st err';},{enableHighAccuracy:true,timeout:10000});
 }
+/* ═══════════════════════════════════════════════════
+   CONEXIÓN A BASE DE DATOS (Google Sheets vía Apps Script)
+   ═══════════════════════════════════════════════════ */
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbykcqdIWNq0jor_Y0xbSDvDaO_HmxJBkbEqlmQwxgAcjdtZ-_YVB-tm6L1wSJTvSKLH/exec'; // URL única compartida por los 8 formularios + 8 tableros
+const PP_NUMERO  = 8;        // Identifica la hoja Respuestas_PP8 en el backend
+
+function recolectarDatosFormulario() {
+  const form = document.getElementById('fichaForm');
+  const fd = new FormData(form);
+  const obj = {};
+  fd.forEach((value, key) => {
+    if (obj.hasOwnProperty(key)) {
+      obj[key] = Array.isArray(obj[key]) ? [...obj[key], value] : [obj[key], value];
+    } else {
+      obj[key] = value;
+    }
+  });
+  obj.pp = PP_NUMERO;
+  obj.timestamp_envio = new Date().toISOString();
+  return obj;
+}
+
+function enviarABaseDeDatos(payload) {
+  // text/plain evita el preflight CORS de Apps Script (truco estándar)
+  return fetch(SCRIPT_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload)
+  });
+}
+
 function submitFicha(){
   const cod='PP8-REB-'+Date.now().toString(36).toUpperCase();
   document.getElementById('codigoFicha').value=cod;
+  const payload = recolectarDatosFormulario();
+  payload.codigo_ficha = cod;
+  enviarABaseDeDatos(payload)
+    .then(() => console.log('✓ Ficha PP8 sincronizada con la base de datos'))
+    .catch(err => console.warn('⚠ No se pudo sincronizar con la base de datos (se guarda solo el código local):', err));
   document.getElementById('fichaFormContainer').style.display='none';
-  document.getElementById('successScreen').classList.add('vis');
+  const sc=document.getElementById('successScreen');
+  sc.classList.add('vis');
   document.getElementById('successCodigo').textContent=cod;
   window.scrollTo({top:0,behavior:'smooth'});
 }
